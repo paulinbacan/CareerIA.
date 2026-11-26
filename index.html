@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerIA - Mentor de Carreiras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🎓 CareerIA</h1>
+    <p>Seu mentor inteligente de carreiras</p>
+</header>
+
+<main>
+    <section class="intro">
+        <h2>Descubra sua profissão ideal!</h2>
+        <p>Responda às perguntas e descubra profissões que
+        combinam com seus interesses, habilidades e objetivos.</p>
+    </section>
+
+    <section class="formulario">
+        <h2>Vamos conhecer você?</h2>
+
+        <form id="careerForm">
+
+            <label>1. Qual área mais desperta seu interesse?</label>
+            <select id="interesse" required>
+                <option value="">Escolha uma opção</option>
+                <option value="tecnologia">Tecnologia</option>
+                <option value="saude">Saúde</option>
+                <option value="educacao">Educação</option>
+                <option value="criatividade">Arte e criatividade</option>
+                <option value="negocios">Negócios</option>
+                <option value="natureza">Natureza e meio ambiente</option>
+            </select>
+
+            <label>2. Qual é sua principal habilidade?</label>
+            <select id="habilidade" required>
+                <option value="">Escolha uma opção</option>
+                <option value="logica">Raciocínio lógico</option>
+                <option value="comunicacao">Comunicação</option>
+                <option value="criacao">Criatividade</option>
+                <option value="cuidado">Cuidar de pessoas</option>
+                <option value="organizacao">Organização</option>
+                <option value="investigacao">Pesquisa e investigação</option>
+            </select>
+
+            <label>3. Como você prefere trabalhar?</label>
+            <select id="ambiente" required>
+                <option value="">Escolha uma opção</option>
+                <option value="equipe">Em equipe</option>
+                <option value="individual">Individualmente</option>
+                <option value="externo">Ao ar livre</option>
+                <option value="computador">Com computadores e tecnologia</option>
+            </select>
+
+            <label>4. O que é mais importante para você?</label>
+            <select id="objetivo" required>
+                <option value="">Escolha uma opção</option>
+                <option value="estabilidade">Estabilidade financeira</option>
+                <option value="ajudar">Ajudar outras pessoas</option>
+                <option value="inovacao">Inovar e criar coisas novas</option>
+                <option value="liberdade">Liberdade profissional</option>
+            </select>
+
+            <label>5. Qual formação você considera fazer?</label>
+            <select id="formacao" required>
+                <option value="">Escolha uma opção</option>
+                <option value="faculdade">Faculdade</option>
+                <option value="tecnico">Curso técnico</option>
+                <option value="livre">Cursos livres e profissionalizantes</option>
+                <option value="explorar">Ainda não sei</option>
+            </select>
+
+            <button type="submit">Descobrir minhas profissões 🚀</button>
+        </form>
+    </section>
+
+    <section id="resultado" class="resultado" aria-live="polite">
+    </section>
+</main>
+
+<footer>
+    <p>CareerIA © 2026 | Projeto educacional de orientação profissional</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
